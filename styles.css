@@ -1,1 +1,75 @@
 /*Maak hier jouw CSS!*/
+body {
+    background-color: #FDEEDC;
+}
+
+.grid_container {
+    display: grid;
+    color: black;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 210px 100px auto 50px;
+    grid-template-areas:
+                "a c c"
+                "b c c"
+                "b e d"
+                "b e ."
+                "f f f";
+}
+
+.stilo {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+#a {
+    background-color: #B43047;
+    grid-area: a;
+}
+
+#b {
+    background-color: #B43047;
+    grid-area: b;
+}
+
+#c {
+    background-color: #B43047;
+    grid-area: c;
+}
+
+#d {
+    background-color: #B43047;
+    grid-area: d;
+}
+
+#e {
+    background-color: #B43047;
+    grid-area: e;
+}
+
+#f {
+    background-color: #B43047;
+    grid-area: f;
+}
+
+@media screen and (max-width: 576px) {
+.grid_container {
+    display: grid;
+    color: black;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas:
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "."
+                "f";
+}
+}
