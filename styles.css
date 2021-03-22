@@ -55,6 +55,7 @@ body {
     grid-area: f;
 }
 
+/*deze comment voeg ik even toe om te kunnen pushen*/
 @media screen and (max-width: 576px) {
 .grid_container {
     display: grid;
